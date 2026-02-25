@@ -1,0 +1,37 @@
+name: Feature Request
+description: Suggest a feature or improvement for Chillio
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before submitting**, please search [existing issues](https://github.com/AppleChillVibez/ChillBugs/issues) to avoid duplicates.
+        If your request already exists, give it a thumbs up (👍) to help us prioritize.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iOS
+        - Android
+        - tvOS
+        - All
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like?
+      description: A clear description of the feature or improvement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this useful?
+      description: How would this improve your experience?
+    validations:
+      required: false

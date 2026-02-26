@@ -8,6 +8,15 @@ body:
         **Before submitting**, please search [existing issues](https://github.com/AppleChillVibez/ChillBugs/issues) to avoid duplicates.
         If your request already exists, give it a thumbs up (👍) to help us prioritize.
 
+  - type: input
+    id: user-id
+    attributes:
+      label: Your User ID
+      description: "Found in: Settings → Manage Account → Add Account → Managed Account → ID"
+      placeholder: "e.g. abc123-def456"
+    validations:
+      required: false
+
   - type: dropdown
     id: platform
     attributes:

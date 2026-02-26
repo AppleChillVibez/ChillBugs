@@ -12,7 +12,7 @@ body:
     id: user-id
     attributes:
       label: Your User ID
-      description: "Found in: Settings → Manage Account → Add Account → Managed Account → ID"
+      description: "From the iOS TestFlight app: Settings → Manage Account → Add Account → Managed Account → ID (Android does not have Settings yet)"
       placeholder: "e.g. abc123-def456"
     validations:
       required: false

@@ -25,10 +25,10 @@ body:
       label: Your User ID
       description: "Found next to the version number at the bottom of Settings."
       placeholder: "e.g. 4KT72MX"
-      pattern: '^[A-Z0-9]{7}$'
-      pattern_error: "User ID must be 7 uppercase alphanumeric characters, e.g. 4KT72MX"
     validations:
       required: true
+      pattern: '[A-Z0-9]{7}'
+      pattern_error: "User ID must be 7 uppercase alphanumeric characters, e.g. 4KT72MX"
 
   - type: input
     id: report-id
@@ -45,10 +45,10 @@ body:
       label: App Version
       description: "Found at the bottom of Settings. Include the build number in parentheses."
       placeholder: "e.g. 10.0.0 (230)"
-      pattern: '^\d+\.\d+\.\d+\s*\(\d+\)$'
-      pattern_error: "Must be in format X.Y.Z (build), e.g. 10.0.0 (230)"
     validations:
       required: true
+      pattern: '\d+\.\d+\.\d+\s*\(\d+\)'
+      pattern_error: "Must be in format X.Y.Z (build), e.g. 10.0.0 (230)"
 
   - type: textarea
     id: description

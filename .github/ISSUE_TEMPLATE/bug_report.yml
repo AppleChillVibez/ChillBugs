@@ -24,7 +24,7 @@ body:
     attributes:
       label: Your User ID
       description: "Found next to the version number at the bottom of Settings."
-      placeholder: "e.g. abc123-def456"
+      placeholder: "e.g. 4KT72MX"
     validations:
       required: true
 
@@ -41,7 +41,8 @@ body:
     id: version
     attributes:
       label: App Version
-      placeholder: "e.g. 2.1.0"
+      description: "Found at the bottom of Settings. Include the build number in parentheses."
+      placeholder: "e.g. 10.0.0 (230)"
     validations:
       required: true
 
@@ -76,6 +77,6 @@ body:
     id: screenshots
     attributes:
       label: Screenshots / Screen recordings
-      description: If applicable, add screenshots or recordings to help explain the problem.
+      description: Add screenshots or recordings to help explain the problem.
     validations:
-      required: false
+      required: true

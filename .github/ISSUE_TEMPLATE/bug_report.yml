@@ -13,9 +13,9 @@ body:
     attributes:
       label: Platform
       options:
-        - iOS
+        # - iOS
+        # - tvOS
         - Android
-        - tvOS
     validations:
       required: true
 
@@ -23,10 +23,19 @@ body:
     id: user-id
     attributes:
       label: Your User ID
-      description: "From the iOS TestFlight app: Settings → Manage Account → Add Account → Managed Account → ID (Android does not have Settings yet)"
+      description: "Found next to the version number at the bottom of Settings."
       placeholder: "e.g. abc123-def456"
     validations:
       required: true
+
+  - type: input
+    id: report-id
+    attributes:
+      label: Report ID (optional)
+      description: "If you sent logs, paste the Report ID shown in Settings → Get Help."
+      placeholder: "e.g. RPT-abc123"
+    validations:
+      required: false
 
   - type: input
     id: version

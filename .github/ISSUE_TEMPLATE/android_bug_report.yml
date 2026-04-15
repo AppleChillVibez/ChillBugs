@@ -1,23 +1,12 @@
-name: Bug Report
-description: Report a bug in Chillio
-labels: ["bug"]
+name: Android Bug Report
+description: Report a bug in Chillio for Android
+labels: ["bug", "android"]
 body:
   - type: markdown
     attributes:
       value: |
         **Before submitting**, please search [existing issues](https://github.com/AppleChillVibez/ChillBugs/issues) to avoid duplicates.
         If your bug already exists, give it a thumbs up (👍) instead of creating a new one.
-
-  - type: dropdown
-    id: platform
-    attributes:
-      label: Platform
-      options:
-        # - iOS
-        # - tvOS
-        - Android
-    validations:
-      required: true
 
   - type: input
     id: user-id

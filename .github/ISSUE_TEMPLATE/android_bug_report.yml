@@ -9,24 +9,13 @@ body:
         If your bug already exists, give it a thumbs up (👍) instead of creating a new one.
 
   - type: input
-    id: user-id
-    attributes:
-      label: Your User ID
-      description: "Found next to the version number at the bottom of Settings."
-      placeholder: "e.g. 4KT72MX"
-    validations:
-      required: true
-      pattern: '[A-Z0-9]{7}'
-      pattern_error: "User ID must be 7 uppercase alphanumeric characters, e.g. 4KT72MX"
-
-  - type: input
     id: report-id
     attributes:
-      label: Report ID (optional)
-      description: "If you sent logs, paste the Report ID shown in Settings → Get Help."
+      label: Report ID
+      description: "Paste the Report ID shown in Settings → Get Help after sending logs."
       placeholder: "e.g. RPT-abc123"
     validations:
-      required: false
+      required: true
 
   - type: input
     id: version
